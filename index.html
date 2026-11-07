@@ -12,14 +12,20 @@
 </head>
 <body>
   <header class="site-header">
-    <button class="brand" id="homeButton">✧ <span>Of Kings, Curses and Mist</span></button>
+    <button class="brand" id="homeButton">✧ <span id="brandTitle">Of Kings, Curses and Mist</span></button>
     <div class="header-actions">
       <label for="language" class="sr-only">Language / Idioma</label>
       <select id="language"><option value="en">English</option><option value="es">Español</option></select>
     </div>
   </header>
   <main id="app" tabindex="-1"></main>
-  <footer class="site-footer"><span id="footerCredit">An illustrated collection of Irish myths & legends</span> · <span>Prototype · 7 November 2026</span></footer>
+  <footer class="site-footer">
+    <p><span id="footerCredit">An illustrated collection of Irish myths & legends</span> · <span id="footerAuthor">Created and curated by David Martín Guerrero</span> · <span id="footerDate">First published 7 November 2026</span></p>
+    <details class="project-credits">
+      <summary id="creditToggle">About the work and AI assistance</summary>
+      <p id="creditNote">Original literary retellings of traditional Irish legends, developed and reviewed under the editorial direction of David Martín Guerrero. AI tools have assisted with writing, translation, and the creation of original illustrations. The underlying legends belong to Irish oral and literary tradition.</p>
+    </details>
+  </footer>
   <script src="main.js" defer></script>
 </body>
 </html>

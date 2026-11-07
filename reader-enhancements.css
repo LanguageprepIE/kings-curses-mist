@@ -31,3 +31,10 @@
 @media (prefers-reduced-motion: reduce) {
   .reader-wrap[data-turn] .spread { animation: none; }
 }
+
+/* Compact, bilingual editorial credits without distracting from the book. */
+.site-footer p { margin: .4em 0; }
+.project-credits { max-width: 760px; margin: 10px auto 0; line-height: 1.65; }
+.project-credits summary { cursor: pointer; color: #365a4d; text-decoration: underline; text-underline-offset: 3px; }
+.project-credits summary:focus-visible { outline: 3px solid #a87824; outline-offset: 3px; }
+.project-credits p { padding: 4px 18px 10px; }
