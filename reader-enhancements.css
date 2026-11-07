@@ -1,0 +1,33 @@
+/* Complete scene illustration, with a subdued soft-focus extension behind it. */
+.page-image { isolation: isolate; overflow: hidden; background: #53675f; }
+.page-image::before {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  background-image: var(--scene-image);
+  background-position: center;
+  background-size: cover;
+  filter: blur(20px) brightness(.68);
+  z-index: -1;
+}
+.page-image img {
+  object-fit: contain;
+  z-index: 0;
+}
+.image-caption { z-index: 1; }
+
+/* Gentle page-turn cue, shared by buttons and horizontal touch gestures. */
+.spread { perspective: 1500px; touch-action: pan-y; }
+.reader-wrap[data-turn="next"] .spread { animation: turn-next .36s ease-out both; }
+.reader-wrap[data-turn="prev"] .spread { animation: turn-prev .36s ease-out both; }
+@keyframes turn-next {
+  from { opacity: .58; transform: rotateY(-8deg) translateX(15px); }
+  to { opacity: 1; transform: rotateY(0) translateX(0); }
+}
+@keyframes turn-prev {
+  from { opacity: .58; transform: rotateY(8deg) translateX(-15px); }
+  to { opacity: 1; transform: rotateY(0) translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reader-wrap[data-turn] .spread { animation: none; }
+}
