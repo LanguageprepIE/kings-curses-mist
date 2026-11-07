@@ -32,7 +32,37 @@ function reader(){const s=sections[lang][page];if(!s)return '<div class="qa">Sto
 function questions(){return `<section class="qa"><button class="tool" data-action="read">← ${t().returnBook}</button><h2>${t().questionTitle}</h2><p>${t().complete}</p><h3>${t().understanding}</h3>${quiz[lang].map((q,i)=>`<fieldset class="question"><legend>${i+1}. ${q.q}</legend>${q.a.map((a,j)=>`<label class="choice"><input type="radio" name="q${i}" value="${j}"> ${a}</label>`).join('')}<p class="feedback" id="feedback${i}" aria-live="polite"></p></fieldset>`).join('')}<aside><h3>${t().reflect}</h3><p>${t().reflection}</p></aside><aside><h3>${t().culture}</h3><p>${t().cultureText}</p><p><a href="https://celt.ucc.ie/document/T300014/" target="_blank" rel="noopener">University College Cork — CELT</a></p></aside><button class="button" data-action="library">${t().back} →</button></section>`}
 function render(){document.documentElement.lang=lang;document.title=t().title+' — '+t().subtitle;document.getElementById('brandTitle').textContent=t().title;document.getElementById('footerAuthor').textContent=t().author;document.getElementById('footerDate').textContent=t().date;document.getElementById('creditToggle').textContent=t().creditsToggle;document.getElementById('creditNote').textContent=t().creditsNote;document.getElementById('footerCredit').textContent=t().type;app.innerHTML=view==='home'?home():view==='library'?library():view==='reader'?reader():questions()}
 function stopSpeech(){if('speechSynthesis' in window)window.speechSynthesis.cancel()}
-function speak(){if(!('speechSynthesis' in window))return;stopSpeech();const section=sections[lang][page];const utter=new SpeechSynthesisUtterance(section.title+'. '+section.paragraphs.join(' '));utter.lang=lang==='es'?'es-ES':'en-IE';utter.rate=.9;window.speechSynthesis.speak(utter)}
+// Web Speech does not expose a reliable gender property. Prefer familiar male
+// voice names in the requested language, then fall back to a local voice.
+const maleVoiceNames={
+  en:/\b(daniel|oliver|arthur|george|thomas|james|aaron|rory|reed|eddy|alex|fred|nathan|gordon|liam|ryan|male)\b/i,
+  es:/\b(jorge|diego|pablo|álvaro|alvaro|enrique|antonio|carlos|juan|mario|raúl|raul|manuel|male|masculina|masculino)\b/i
+};
+function narratorVoice(code){
+  const available=window.speechSynthesis.getVoices();
+  const matching=available.filter(voice=>voice.lang.toLowerCase().startsWith(code+'-'));
+  const localePriority=code==='es'?['es-es','es-mx']:['en-ie','en-gb','en-us'];
+  const priority=voice=>{
+    const locale=voice.lang.toLowerCase();
+    const index=localePriority.indexOf(locale);
+    return index<0?localePriority.length:index;
+  };
+  const preferred=matching.filter(voice=>maleVoiceNames[code].test(voice.name));
+  return (preferred.length?preferred:matching).sort((a,b)=>priority(a)-priority(b))[0]||null;
+}
+function speak(){
+  if(!('speechSynthesis' in window))return;
+  stopSpeech();
+  const section=sections[lang][page];
+  if(!section)return;
+  const utter=new SpeechSynthesisUtterance(section.title+'. '+section.paragraphs.join(' '));
+  const voice=narratorVoice(lang);
+  if(voice){utter.voice=voice;utter.lang=voice.lang}
+  else utter.lang=lang==='es'?'es-ES':'en-IE';
+  utter.rate=.88;
+  utter.pitch=.96;
+  window.speechSynthesis.speak(utter);
+}
 function turnPage(direction){
   if(view!=='reader')return;
   turnDirection=direction;
