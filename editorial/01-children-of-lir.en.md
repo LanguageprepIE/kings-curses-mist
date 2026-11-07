@@ -1,6 +1,6 @@
 # Chapter 01 — The Children of Lir
 
-**Status:** Revised English draft for David and Ann to review — NOT YET PUBLISHED  
+**Status:** Literary text approved by David on 7 November 2026 — website not yet published  
 **Edition:** English, first draft (7 November 2026)  
 **Collection:** *Of Kings, Curses and Mist*  
 **Target audience:** Teenage and general readers  
