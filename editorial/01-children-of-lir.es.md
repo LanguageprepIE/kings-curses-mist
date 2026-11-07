@@ -1,6 +1,6 @@
 # Leyenda 01 — Los hijos de Lir
 
-**Estado:** Borrador en español para revisión de David y Ann — TODAVÍA NO PUBLICADO  
+**Estado:** Texto literario aprobado por David el 7 de noviembre de 2026 — web todavía no publicada  
 **Colección:** *De reyes, maldiciones y niebla*  
 **Subtítulo:** *Donde la Irlanda ancestral cobra vida*  
 **Edición:** Español de España, 7 de noviembre de 2026
