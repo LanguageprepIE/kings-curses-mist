@@ -3,3 +3,13 @@
   background: linear-gradient(0deg, rgba(9,29,23,.92), rgba(9,29,23,.14) 80%),
     url('assets/collection-cover.webp') center / cover no-repeat;
 }
+.hero-byline {
+  margin: 22px 0 0;
+  color: #f0e3c8;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(14px, 1.6vw, 19px);
+  letter-spacing: .035em;
+  text-shadow: 0 1px 8px rgba(0,0,0,.55);
+}
+.hero-byline strong { font-weight: 500; }
+.hero-byline + .button.gold { margin-top: 18px; }
