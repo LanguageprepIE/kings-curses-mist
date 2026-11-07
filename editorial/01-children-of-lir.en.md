@@ -1,6 +1,6 @@
 # Chapter 01 — The Children of Lir
 
-**Status:** Editorial draft for David and Ann to review — NOT YET PUBLISHED  
+**Status:** Revised English draft for David and Ann to review — NOT YET PUBLISHED  
 **Edition:** English, first draft (7 November 2026)  
 **Collection:** *Of Kings, Curses and Mist*  
 **Target audience:** Teenage and general readers  
@@ -44,7 +44,7 @@ Then Fionnuala spoke. She still possessed a human voice.
 
 Aoife looked away. She could not undo what she had done. She declared that they must remain swans for nine hundred years: three hundred on Lough Derravaragh, three hundred on the Sea of Moyle, and three hundred on the waters near Erris in the west.
 
-But she left them their memories, their speech and a gift: their singing would be more beautiful than any song heard in Ireland.
+The spell would end only when a man from the North and a woman from the South were joined, she foretold. Until then, no one could free them. Yet she left them their memories, their speech and a gift: their singing would be more beautiful than any song heard in Ireland.
 
 It was a cruel comfort.
 
@@ -106,13 +106,13 @@ And so they flew back towards the western sea.
 
 On the island of Inis Gluaire, the swans heard a sound unlike any they remembered: a bell ringing from a small Christian settlement.
 
-A holy man named Mochaomhóg heard their song and welcomed them. He listened as Fionnuala told him their long story. In his care they found a peace that had been absent for centuries.
+A holy man named Mochaomhóg heard their song and welcomed them. He listened as Fionnuala told him their long story. In his care they found peace at last.
 
-Yet the ancient spell had one final turn. When its appointed time ended, the four swans changed back into human form—but not into the children who had entered the lake. The weight of nine hundred years was suddenly upon them.
+By then, the prophecy had come true: Lairgnen of Connacht had married Deoch of Munster. When Deoch heard of the extraordinary swans, she begged her husband to bring them to her. Mochaomhóg refused to surrender them.
 
-Their journey was ending.
+Angry at being denied, Lairgnen came to the island himself. He seized the four swans, two in each hand. At once their feathers fell away. Before his astonished eyes stood not the children who had entered the lake, but four people aged by nine hundred years.
 
-The holy man stayed with them. In the traditional tale, they received baptism before they died, and were buried together.
+Lairgnen fled. The holy man stayed beside the siblings, whose journey was ending. In the traditional tale he baptised them before they died, and buried them together, as Fionnuala requested.
 
 Fionnuala had kept her promise to her brothers through wind, hunger, storms and loss. No king or spell had saved them from every sorrow. What endured was the bond they had refused to abandon.
 
@@ -125,7 +125,7 @@ And long after the last notes faded over the island, Ireland remembered the song
 - This is a **new prose adaptation**, not a reproduction of a modern retelling.
 - The childhood personalities, dialogue, sensory descriptions and Fionnuala's final reflection are creative additions.
 - Core traditional elements retained: Lir, Aobh, Aoife, four named children, Bodb Dearg, Lough Derravaragh, three periods of three hundred years, the Sea of Moyle, Erris, Inis Gluaire, the Christian bell, return to human form and death.
-- The traditional ending also includes a north/south marriage prophecy and the attempted removal of the swans; this draft compresses those details. Decide during editorial review whether to expand the final act for greater fidelity.
+- The prophecy of Lairgnen and Deoch and Lairgnen's seizure of the birds are included in compressed form; the silver chains and other details are omitted to maintain the target reading length.
 - The first illustration depicts exactly four swans. The transformation pilot appears to depict too many bodies in transition and should not be treated as final.
 - The family illustration depicts Lir with Fionnuala, Aodh, Fiachra and Conn; ages, faces, attire and colour palette are **artistic choices**, not descriptions claimed from the historical sources.
 
