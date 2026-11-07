@@ -1,0 +1,17 @@
+/* Second edition: a unified illustrated spread, rather than two hard-edged panels. */
+.hero{
+  background:linear-gradient(0deg,rgba(9,29,23,.92),rgba(9,29,23,.14) 80%),url('assets/collection-cover.webp') center/cover no-repeat;
+}
+@media (min-width:751px){
+  .spread{grid-template-columns:52% 48%;background:var(--paper)}
+  .page-text{grid-column:1;grid-row:1;box-shadow:none;position:relative;z-index:1;padding-right:clamp(18px,2.8vw,42px)}
+  .page-image{grid-column:2;grid-row:1;background:var(--paper);margin-left:-36px;overflow:hidden}
+  .page-image img{width:calc(100% + 36px);max-width:none;mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 100%)}
+  .image-caption{display:none}
+}
+@media (max-width:750px){
+  .page-image{grid-row:1;background:var(--paper)}
+  .page-image img{mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 75%,transparent 100%)}
+  .image-caption{display:none}
+  .page-text{grid-row:2;box-shadow:none}
+}
