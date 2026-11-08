@@ -2,3 +2,6 @@
 
 /* Cultural reading page after the legend */
 .beyond-legend{margin:38px auto 18px;padding:clamp(22px,4vw,48px);max-width:790px;background:#faf4e6;border:1px solid #d9c8a3;box-shadow:0 12px 30px #322b1b14;color:#2d342d;line-height:1.75}.beyond-legend h2{font:clamp(30px,4vw,44px) Georgia,serif;margin:5px 0 10px;color:#254c42}.beyond-legend h3{font:23px Georgia,serif;color:#355e51;margin:22px 0 5px}.beyond-legend p{margin:7px 0}.beyond-eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#776a50}.beyond-lead{font-family:Georgia,serif;font-style:italic;font-size:19px;border-bottom:1px solid #d7c7a8;padding-bottom:19px}.beyond-source{font-size:13px;border-top:1px solid #d7c7a8;padding-top:15px;margin-top:25px!important}.beyond-source a{color:#315c53}
+
+/* Headings in the final Beyond the Legend book page */
+.page-text .cultural-note{margin:0 0 1.1em}.page-text .cultural-note h3{font-family:Georgia,'Times New Roman',serif;font-size:calc(19px * var(--font-scale));line-height:1.25;color:#386c5d;margin:0 0 .3em;font-weight:700}.page-text .cultural-note p{margin:0;font-size:calc(16px * var(--font-scale));line-height:1.55}.reader-wrap.night .cultural-note h3{color:#d7bd86}
