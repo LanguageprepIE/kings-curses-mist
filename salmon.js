@@ -27,16 +27,16 @@ const t=()=>labels[lang];
 function parse(md){
 const groups=md.split(/\n(?=## [1-9]\. )/).filter(part=>/^## [1-9]\./.test(part));
 const result=[];
-for(const group of groups){
+for(const [groupIndex,group] of groups.entries()){
 const [heading,...rest]=group.trim().split('\n');
 const title=heading.replace(/^## [1-9]\. /,'');
 const paras=rest.join('\n').trim().split(/\n\s*\n/).filter(Boolean);
 let chunk=[],size=0;
 for(const p of paras){
-if(chunk.length>=3&&size+p.length>1500){result.push({title,paras:chunk});chunk=[];size=0}
+if(chunk.length>=3&&size+p.length>1500){result.push({title,paras:chunk,groupIndex});chunk=[];size=0}
 chunk.push(p);size+=p.length;
 }
-if(chunk.length)result.push({title,paras:chunk});
+if(chunk.length)result.push({title,paras:chunk,groupIndex});
 }
 return result;
 }
@@ -53,11 +53,9 @@ function scene(){
 const n=pages[lang].length;
 if(page===0)return {src:'assets/salmon-mentor.webp',alt:lang==='es'?'Finegas conversa con el joven Fionn junto al Boyne':'Finegas speaks with young Fionn beside the Boyne',decor:false};
 if(page===n)return {src:'assets/ornament-medallion.webp',alt:'',decor:true};
-const title=pages[lang][page].title.toLowerCase();
-if(title.includes('seven')||title.includes('siete')){
-if(page===Math.floor(n*.4))return {src:'assets/salmon-cover.webp',alt:lang==='es'?'El salmón salta entre las aguas del río Boyne':'The salmon leaps from the River Boyne',decor:false};
-}
-if(title.includes('fire')||title.includes('fuego')||title.includes('don')||title.includes('given'))return {src:'assets/salmon-gift.webp',alt:lang==='es'?'Finegas habla con Fionn junto al salmón cocinado':'Finegas speaks with Fionn beside the cooked salmon',decor:false};
+const current=pages[lang][page];
+if(current.groupIndex===1 && (page===n-1 || pages[lang][page+1].groupIndex!==1))return {src:'assets/salmon-cover.webp',alt:lang==='es'?'El salmón salta entre las aguas del río Boyne':'The salmon leaps from the River Boyne',decor:false};
+if(current.groupIndex===3 && (page===0 || pages[lang][page-1].groupIndex!==3))return {src:'assets/salmon-gift.webp',alt:lang==='es'?'Finegas habla con Fionn junto al salmón cocinado':'Finegas speaks with Fionn beside the cooked salmon',decor:false};
 return {src:page%2?'assets/ornament-border.webp':'assets/ornament-medallion.webp',alt:'',decor:true};
 }
 function go(v){stop();view=v;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
