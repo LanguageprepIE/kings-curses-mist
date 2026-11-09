@@ -3,13 +3,14 @@
 **Status:** Literary draft for David's review — NOT approved or published  
 **Collection:** *Of Kings, Curses and Mist*  
 **Edition:** English, 9 November 2026  
-**Illustrations:** To be decided after literary approval (usually two or three)
+**Illustrations:** To be decided after literary approval (usually two or three)  
+**Narrator-frame segment:** First paragraph of section 1 only; the story proper follows in third person.
 
 ## 1. The River's Apprentice
 
-The River Boyne carried many things towards the sea: fallen leaves, broken branches, the reflections of passing clouds. It also carried stories. Some said that its waters remembered secrets older than the people who lived beside them.
+I've walked beside the Boyne in every season, yet the river never seems to tell quite the same story twice. Once, near a bend where the reeds grow thick, I heard of a boy who came seeking wisdom and a poet who had spent seven years waiting for it. People still disagree about some details. They agree on the boy's name: Fionn.
 
-On a misty morning, a boy arrived at a small dwelling near a quiet bend in the river. His name was Fionn, and he had travelled far to meet the poet Finegas.
+He arrived at Finegas's small riverside dwelling on a misty morning, tired from the road but determined to become the poet's pupil.
 
 Finegas was not a poet of the kind who merely found pleasing words for a song. He knew the histories of kings, the names of distant places and the laws by which people settled their quarrels. He could look at a tree and tell what season had shaped its branches. He could listen to a stranger and hear what the stranger had left unsaid.
 
@@ -181,4 +182,4 @@ But on the morning he left Finegas, he was simply a young man standing by a rive
 
 Finegas placed a hand on his shoulder. “Ask good questions.”
 
-Fionn set off along the bank. Behind him the poet returned to his dwelling, and the river flowed between the reeds, carrying its secrets towards the sea.
+Fionn set off along the bank. Finegas watched until the boy disappeared among the trees, then returned alone to the house. The Boyne went on flowing.
