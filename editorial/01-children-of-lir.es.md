@@ -3,9 +3,12 @@
 **Estado:** Texto literario aprobado por David el 7 de noviembre de 2026 — web todavía no publicada  
 **Colección:** *De reyes, maldiciones y niebla*  
 **Subtítulo:** *Donde la Irlanda ancestral cobra vida*  
-**Edición:** Español de España, 7 de noviembre de 2026
+**Edición:** Español de España, 7 de noviembre de 2026  
+**Narrador viajero:** Una breve entrada inicial; el resto del texto aprobado no cambia (9 de noviembre de 2026)
 
 ## 1. La casa junto al lago
+
+Escuché esta leyenda por primera vez cerca de un lago, en el corazón de Irlanda. Quien me la contó no empezó por el hechizo, sino por una familia.
 
 Mucho antes de que Irlanda tuviera las carreteras y los pueblos que conocemos, cuando se decía que los Tuatha Dé Danann caminaban por sus tierras, vivía un señor llamado Lir. Su hogar se alzaba entre colinas arboladas, allí donde el viento traía el olor de la lluvia desde los lagos.
 
