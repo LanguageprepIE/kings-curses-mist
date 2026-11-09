@@ -49,15 +49,25 @@ render();
 }
 function save(){localStorage.setItem('okcm-salmon-page-'+lang,String(page))}
 function stop(){if('speechSynthesis'in window)speechSynthesis.cancel()}
+function illustratedPage(index){
+const story=pages[lang],n=story.length;
+if(index===0)return true;
+if(index>=n)return false;
+const current=story[index];
+return (current.groupIndex===1 && (index===n-1 || story[index+1].groupIndex!==1))
+  || (current.groupIndex===3 && story[index-1].groupIndex!==3);
+}
 function scene(){
 const n=pages[lang].length;
 const ornaments=['assets/ornament-knot-small.webp','assets/ornament-triskele.webp','assets/ornament-oval.webp','assets/ornament-diamond.webp'];
-const decoration={src:ornaments[page%ornaments.length],alt:'',decor:true};
+let ornamentIndex=0;
+for(let i=0;i<page;i++)if(!illustratedPage(i))ornamentIndex++;
+const decoration={src:ornaments[ornamentIndex%ornaments.length],alt:'',decor:true};
 if(page===0)return {src:'assets/salmon-mentor-4x5.webp',alt:lang==='es'?'Finegas conversa con el joven Fionn junto al Boyne':'Finegas speaks with young Fionn beside the Boyne',decor:false};
 if(page===n)return decoration;
 const current=pages[lang][page];
 if(current.groupIndex===1 && (page===n-1 || pages[lang][page+1].groupIndex!==1))return {src:'assets/salmon-cover.webp',alt:lang==='es'?'El salmón salta entre las aguas del río Boyne':'The salmon leaps from the River Boyne',decor:false};
-if(current.groupIndex===3 && (page===0 || pages[lang][page-1].groupIndex!==3))return {src:'assets/salmon-gift-4x5.webp',alt:lang==='es'?'Finegas habla con Fionn junto al salmón cocinado':'Finegas speaks with Fionn beside the cooked salmon',decor:false};
+if(current.groupIndex===3 && pages[lang][page-1].groupIndex!==3)return {src:'assets/salmon-gift-4x5.webp',alt:lang==='es'?'Finegas habla con Fionn junto al salmón cocinado':'Finegas speaks with Fionn beside the cooked salmon',decor:false};
 return decoration;
 }
 function go(v){stop();view=v;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
