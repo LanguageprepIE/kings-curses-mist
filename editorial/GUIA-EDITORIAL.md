@@ -42,9 +42,9 @@ Buscar observación concreta, motivos creíbles, silencios y una sintaxis con va
 
 ## Voz narrativa de la colección — decisión aprobada
 
-**Narrador viajero discreto + tercera persona cercana de sensibilidad contemporánea.** La voz marco sugiere a alguien que ha recorrido Irlanda, escuchado leyendas de diversas personas y lugares y ahora las transmite. No es el protagonista ni un testigo presencial de los sucesos míticos. No es obligatorio darle nombre, edad, aspecto o una biografía cerrada.
+**Narrador viajero discreto + tercera persona cercana de sensibilidad contemporánea.** La voz marco sugiere a alguien que ha recorrido Irlanda, escuchado leyendas de diversas personas y lugares y ahora las transmite. No es el protagonista ni un testigo presencial de los sucesos míticos. No se le asignan nombre, edad, género, apariencia ni una biografía cerrada: su identidad queda deliberadamente abierta a la imaginación del lector.
 
-- **Uso esporádico, nunca mecánico:** puede asomar al principio, al final o excepcionalmente en un punto de transición; muchos relatos podrán prescindir de él. Evitar la fórmula repetida «en uno de mis viajes...».
+- **Identidad abierta (acordada por David):** «El narrador tiene voz, pero no necesita rostro, nombre, edad ni género». Evitar referencias involuntarias a su edad, género, cuerpo o pasado personal que cierren esa ambigüedad. Una futura voz sintetizada es una elección de interpretación sonora, no una identidad canónica.\n- **Uso esporádico, nunca mecánico:** puede asomar al principio, al final o excepcionalmente en un punto de transición; muchos relatos podrán prescindir de él. Evitar la fórmula repetida «en uno de mis viajes...».
 - **Cuerpo narrativo:** tercera persona literaria, próxima a la experiencia de los personajes, con escenas, diálogos y conflictos emocionalmente creíbles. No convertirlo todo en primera persona.
 - **Función:** crear continuidad, sensación de tradición transmitida y vínculo con los paisajes reales de Irlanda, sin robar atención ni imponer moralejas.
 - **Honestidad:** distinguir «me contaron esta historia» de «yo vi suceder esta leyenda». Cuando proceda, reconocer variantes en la sección cultural; no inventar testimonios como documentación histórica.
