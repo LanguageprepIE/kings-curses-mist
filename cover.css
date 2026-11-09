@@ -13,3 +13,9 @@
 }
 .hero-byline strong { font-weight: 500; }
 .hero-byline + .button.gold { margin-top: 18px; }
+
+/* Align library actions at the bottom of cards, regardless of blurb length. */
+.book-card { display: flex; flex-direction: column; }
+.book-card > img { flex-shrink: 0; }
+.book-card-content { display: flex; flex: 1; flex-direction: column; }
+.book-card-content > .button { margin-top: auto; }
