@@ -4,9 +4,12 @@
 **Edition:** English, first draft (7 November 2026)  
 **Collection:** *Of Kings, Curses and Mist*  
 **Target audience:** Teenage and general readers  
-**Illustrations:** Pilot art requires narrative continuity review
+**Illustrations:** Pilot art requires narrative continuity review  
+**Narrator frame:** One short opening paragraph; remainder of the approved story unchanged (9 November 2026)
 
 ## 1. The House by the Lake
+
+I first heard this tale beside a lake in the Irish midlands. The person telling it began not with the curse, but with a family.
 
 Long before the roads and towns of modern Ireland, when the Tuatha Dé Danann were said to walk the land, there lived a lord named Lir. His home stood among wooded hills, where the wind carried the scent of rain from the lakes.
 
