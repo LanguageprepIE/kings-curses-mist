@@ -3,9 +3,9 @@
 
 **Proyecto:** [LIBRO] `LanguageprepIE/kings-curses-mist`  
 **Dirección editorial y autoría:** David Martín Guerrero  
-**Versión:** 1.0 — 9 de noviembre de 2026  
+**Versión:** 1.1 — 9 de noviembre de 2026  
 **Ámbito:** Todas las leyendas nuevas y revisiones futuras del LIBRO. No modifica automáticamente [PERGAMINOS] `LanguageprepIE/story-scrolls-ireland`.  
-**Estado:** Los ocho principios siguientes quedan establecidos como guía. La voz narrativa específica de la colección sigue **en exploración**.
+**Estado:** Los ocho principios siguientes quedan establecidos como guía. La voz narrativa híbrida fue **aprobada por David el 9 de noviembre de 2026**; su dosificación y ejecución se decidirán relato a relato.
 
 ## 1. Literatura, no material escolar
 Escribir una obra literaria que pueda disfrutar un adolescente y también un adulto. Usar lenguaje cuidado, evocador y natural, vocabulario rico pero claro, diálogos verosímiles y descripciones al servicio de la atmósfera. Evitar la infantilización, los ejercicios didácticos introducidos en la trama y el exceso de explicaciones. Las actividades de comprensión van después del cuento, no dentro de él.
@@ -40,14 +40,19 @@ Buscar observación concreta, motivos creíbles, silencios y una sintaxis con va
 6. Preguntas de comprensión y reflexión, bibliografía/further reading y accesibilidad.
 7. Integración y pruebas del lector bilingüe; publicación.
 
-## Voz narrativa — propuestas en estudio, no decisión tomada
-**A. Narrador clásico evocador:** tercera persona, cadencia ligeramente oral, distancia histórica; riesgo de solemnidad excesiva.  
-**B. Cercanía de novela contemporánea:** tercera persona próxima a los personajes, más escena y psicología; riesgo de desmitificar o modernizar artificialmente sus voces.  
-**C. Narrador viajero / transmisor de historias:** una voz marco, quizá en primera persona, que ha recorrido Irlanda y escuchado distintas versiones; conecta la colección con la tradición de los narradores orales. Riesgos: protagonismo intrusivo, afirmaciones falsas de presencia en hechos míticos, prólogos repetitivos y mezcla confusa de fuente histórica con ficción.
+## Voz narrativa de la colección — decisión aprobada
 
-**Opción híbrida pendiente de debate:** un narrador-marco reconocible aparece solo al abrir y cerrar algunas leyendas, y el cuerpo principal utiliza tercera persona cercana y literaria. La fórmula sería modular y no obligatoria. No debe afirmarse que el narrador presenció sucesos míticos; puede decir que oyó la historia junto al Boyne, en una posada, en un hogar, etc., como recurso de ficción claramente reconocible.
+**Narrador viajero discreto + tercera persona cercana de sensibilidad contemporánea.** La voz marco sugiere a alguien que ha recorrido Irlanda, escuchado leyendas de diversas personas y lugares y ahora las transmite. No es el protagonista ni un testigo presencial de los sucesos míticos. No es obligatorio darle nombre, edad, aspecto o una biografía cerrada.
 
-**Decisión pendiente de David:** elegir o experimentar con una voz antes de convertirla en norma. No reescribir el capítulo 1 ni el borrador 2 por defecto hasta acordarlo.
+- **Uso esporádico, nunca mecánico:** puede asomar al principio, al final o excepcionalmente en un punto de transición; muchos relatos podrán prescindir de él. Evitar la fórmula repetida «en uno de mis viajes...».
+- **Cuerpo narrativo:** tercera persona literaria, próxima a la experiencia de los personajes, con escenas, diálogos y conflictos emocionalmente creíbles. No convertirlo todo en primera persona.
+- **Función:** crear continuidad, sensación de tradición transmitida y vínculo con los paisajes reales de Irlanda, sin robar atención ni imponer moralejas.
+- **Honestidad:** distinguir «me contaron esta historia» de «yo vi suceder esta leyenda». Cuando proceda, reconocer variantes en la sección cultural; no inventar testimonios como documentación histórica.
+- **Bilingüismo:** la voz debe sonar idiomática y natural en inglés y español, sin obligar a idénticos giros de apertura y cierre.
+- **Preparación del audio:** identificar las intervenciones de voz marco en los archivos editoriales, para que puedan recibir una voz distinta en una futura producción. El lector actual puede seguir utilizando síntesis del navegador. ElevenLabs no es requisito para redactar ni publicar el texto.
+- **Aplicación prudente:** probar primero en el borrador del capítulo 2. El texto aprobado de *Los hijos de Lir* no cambia sin una nueva revisión y aprobación de David.
+
+La guía fija **la estrategia**, no una cantidad obligatoria de intervenciones.
 
 ## Checklist de aprobación
 - ¿El comienzo invita a continuar?
