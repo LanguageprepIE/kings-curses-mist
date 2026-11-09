@@ -1,0 +1,30 @@
+/* Chapter 2 shares the book's visual language while allowing flexible page counts. */
+.brand{text-decoration:none}
+.salmon-image{position:relative;min-height:480px;background:#e5d9b8}
+.salmon-image img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0}
+.salmon-image.decorative{background:#efe5d0}
+.salmon-image.decorative img{object-fit:contain}
+.salmon-image .image-caption{font-size:14px}
+.salmon-image.decorative .image-caption{display:none}
+.salmon-opening{max-width:850px;margin:20px auto;padding:25px;background:#fbf3e4;border:1px solid #dacbaf;border-radius:12px}
+.salmon-opening img{width:100%;max-height:560px;object-fit:contain;display:block;background:#314940;border-radius:7px}
+.salmon-opening h1{font-size:clamp(36px,5vw,61px);color:#274b40}
+.salmon-opening p{line-height:1.7}
+.salmon-opening .button{margin-top:12px}
+.salmon-opening .mini-label{margin:16px 0}
+.salmon-reader .prose{font-size:calc(18px * var(--font-scale))}
+.salmon-reader .page-text{scrollbar-width:thin}
+.salmon-reader .page-image{background:#53675f}
+.salmon-reader .page-image::before{background-image:var(--scene-image)}
+.salmon-reader .page-image img{object-fit:contain}
+.salmon-reader .page-image.decorative::before{display:none}
+.salmon-reader .page-image.decorative{background:#f1e6d0}
+.salmon-reader .page-image.decorative img{object-fit:contain}
+.salmon-reader .page-image.decorative .image-caption{display:none}
+.salmon-reader .beyond-note{margin:0 0 1.1em}
+.salmon-reader .beyond-note h3{font-size:calc(19px * var(--font-scale));margin:0 0 .3em;color:#386c5d}
+.salmon-reader.night .beyond-note h3{color:#d7bd86}
+.salmon-reader .page-text{color:var(--ink)}
+.salmon-reader.night .page-text{color:#eee8d8}
+.salmon-reader.night .page-image.decorative{background:#403f34}
+@media(max-width:750px){.salmon-image{min-height:250px}.salmon-reader .page-image{min-height:250px;max-height:42vh}}
