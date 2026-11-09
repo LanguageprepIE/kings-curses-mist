@@ -26,5 +26,6 @@
 .salmon-reader.night .beyond-note h3{color:#d7bd86}
 .salmon-reader .page-text{color:var(--ink)}
 .salmon-reader.night .page-text{color:#eee8d8}
-.salmon-reader.night .page-image.decorative{background:#403f34}\n.salmon-reader.night .page-image.decorative img{mix-blend-mode:normal;opacity:.17}
+.salmon-reader.night .page-image.decorative{background:#403f34}
+.salmon-reader.night .page-image.decorative img{mix-blend-mode:normal;opacity:.17}
 @media(max-width:750px){.salmon-image{min-height:250px}.salmon-reader .page-image{min-height:250px;max-height:42vh}}
