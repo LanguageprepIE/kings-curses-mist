@@ -3,13 +3,14 @@
 **Estado:** Borrador literario para la revisión de David — NO aprobado ni publicado  
 **Colección:** *De reyes, maldiciones y niebla*  
 **Edición:** Español de España, 9 de noviembre de 2026  
-**Ilustraciones:** Por decidir tras aprobar la narración (normalmente dos o tres)
+**Ilustraciones:** Por decidir tras aprobar la narración (normalmente dos o tres)  
+**Intervención del narrador viajero:** Solo el primer párrafo del apartado 1; el resto se narra en tercera persona.
 
 ## 1. El aprendiz del río
 
-El río Boyne llevaba siglos arrastrando hojas, ramas y reflejos de nubes hacia el mar. También, según contaban, guardaba secretos. Había quienes aseguraban que sus aguas conocían historias anteriores a todos los hombres que habían vivido en sus orillas.
+He recorrido las orillas del Boyne en días de lluvia y bajo el sol del verano. Nunca he encontrado dos personas que cuenten exactamente igual sus leyendas. Pero una vez, cerca de un remanso rodeado de juncos, escuché una historia en la que todos coincidían en algo: un muchacho llamado Fionn había recibido un don que otro hombre llevaba siete años esperando.
 
-Una mañana de niebla, un muchacho llegó a una pequeña vivienda situada junto a un remanso. Se llamaba Fionn y había recorrido un largo camino para encontrar al poeta Finegas.
+Fionn llegó una mañana de niebla a la vivienda del poeta Finegas. Había caminado mucho para conocerlo y estaba decidido a convertirse en su aprendiz.
 
 Finegas no se dedicaba simplemente a componer versos hermosos. Conocía las hazañas de antiguos reyes, las leyes que regían las disputas y los nombres de lugares que apenas aparecían en los mapas de su tiempo. Sabía distinguir los árboles por la forma de sus ramas y adivinaba, en las palabras de los viajeros, aquello que preferían callarse.
 
@@ -193,4 +194,4 @@ El poeta le puso una mano en el hombro.
 
 —No dejes nunca de hacerte buenas preguntas.
 
-Fionn emprendió su camino siguiendo la orilla. A sus espaldas, Finegas regresó a la casa y el río continuó fluyendo entre los juncos, llevándose sus secretos hacia el mar.
+Fionn emprendió su camino siguiendo la orilla. Finegas lo observó hasta que desapareció entre los árboles. Después regresó solo a la casa. El Boyne siguió su curso.
