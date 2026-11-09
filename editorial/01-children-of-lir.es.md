@@ -8,7 +8,7 @@
 
 ## 1. La casa junto al lago
 
-Escuché esta leyenda por primera vez cerca de un lago, en el corazón de Irlanda. Quien me la contó no empezó por el hechizo, sino por una familia.
+La primera vez que oí esta leyenda fue cerca de un lago, en el corazón de Irlanda. Quien me la contó no empezó por el hechizo, sino por una familia.
 
 Mucho antes de que Irlanda tuviera las carreteras y los pueblos que conocemos, cuando se decía que los Tuatha Dé Danann caminaban por sus tierras, vivía un señor llamado Lir. Su hogar se alzaba entre colinas arboladas, allí donde el viento traía el olor de la lluvia desde los lagos.
 
