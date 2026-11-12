@@ -6,17 +6,27 @@
 **Ilustraciones:** Por elegir después de aprobar la narración (normalmente 2–3 obras originales verticales 4:5)
 **Narrador:** Tercera persona literaria; sin intervención obligatoria del narrador viajero.
 
-## 1. Después de la batalla
+## 1. El dueño de las tres melodías
 
-El Dagda notó la ausencia nada más entrar en su salón.
+Escuché esta historia por primera vez una tarde de lluvia, en Irlanda. Quien la contaba habló de una batalla, de un arpa robada y de un salón repleto de enemigos. Sin embargo, cuando terminó, lo que más recordaba yo era la música. Tal vez por eso la leyenda ha llegado mucho más lejos que el lugar en el que se sitúa.
 
-Oía los pasos sobre el suelo cubierto de juncos, el golpeteo de los cuencos y las voces cansadas de quienes regresaban del combate. Afuera, el agua de lluvia caía de los aleros y se acumulaba en los surcos del patio. Todo sonaba como siempre.
+Mucho antes de que existieran las ciudades y las carreteras de la Irlanda actual, se decía que la isla estaba habitada por los Tuatha Dé Danann, un pueblo de la mitología irlandesa al que se atribuían grandes conocimientos, habilidades extraordinarias y poderes mágicos. Entre sus figuras más importantes se encontraba el Dagda.
+
+Su nombre suele interpretarse como «el dios bueno», aunque aquello no significaba que fuera siempre amable ni que careciera de temperamento. Era un personaje imponente: poderoso en el combate, generoso en los banquetes y dotado de un humor bastante terrenal. En las historias que se contaban sobre él, la fuerza y la magia solían ir de la mano.
+
+Entre sus posesiones más extraordinarias destacaba un arpa cuya música era capaz de hacer llorar, reír o dormir a cuantos la escuchaban. Uaithne era el músico a su servicio y conocía bien aquel instrumento; sin embargo, solo el Dagda podía llamarlo para que regresara cuando se encontraba lejos de él.
+
+Por aquellos tiempos, los Tuatha Dé Danann estaban enfrentados a los fomorianos, sus temibles rivales. Después de una terrible batalla en Mag Tuired, los guerreros vencedores regresaron bajo la lluvia. Debería haber sido una noche de canciones.
+
+Pero no había música.
+
+El Dagda notó el silencio nada más entrar en su salón.
+
+Oía los pasos sobre el suelo cubierto de juncos, el golpeteo de los cuencos y las voces cansadas de quienes regresaban del combate. Afuera, la lluvia caía de los aleros y se acumulaba en los surcos del patio. Todo sonaba como siempre.
 
 Todo menos una cosa.
 
-Junto al gran fuego quedaba un espacio vacío. Allí había descansado un arpa tan alta que su marco de madera llegaba casi hasta el hombro del Dagda. Sus cuerdas eran capaces de despertar carcajadas entre los más agotados o de apaciguar una sala entera. Ahora solo se veía una marca clara en la pared.
-
-La batalla de Mag Tuired había terminado con la victoria de los Tuatha Dé Danann. Sus enemigos, los fomorianos, habían huido. Sin embargo, durante la retirada, se habían llevado el arpa y a Uaithne, el músico que la custodiaba.
+Junto al gran fuego quedaba un espacio vacío. Allí había descansado el arpa. Ahora solo se veía una marca clara en la pared. Durante la retirada, los fomorianos se habían llevado el instrumento y a Uaithne, su custodio.
 
 El Dagda permaneció un rato frente a aquel hueco.
 
