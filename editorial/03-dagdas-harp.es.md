@@ -8,13 +8,13 @@
 
 ## 1. El dueño de las tres melodías
 
-Escuché esta historia por primera vez una tarde de lluvia, en Irlanda. Quien la contaba habló de una batalla, de un arpa robada y de un salón repleto de enemigos. Sin embargo, cuando terminó, lo que más recordaba yo era la música. Tal vez por eso la leyenda ha llegado mucho más lejos que el lugar en el que se sitúa.
+Cuando el Dagda entraba en un salón, costaba no reparar en su presencia. Era corpulento, de barba abundante y risa sonora; tan capaz de imponerse en un combate como de disfrutar de una buena comida. Sin embargo, quienes lo conocían sabían que había algo que apreciaba especialmente: la música.
 
-Mucho antes de que existieran las ciudades y las carreteras de la Irlanda actual, se decía que la isla estaba habitada por los Tuatha Dé Danann, un pueblo de la mitología irlandesa al que se atribuían grandes conocimientos, habilidades extraordinarias y poderes mágicos. Entre sus figuras más importantes se encontraba el Dagda.
+El Dagda pertenecía a los Tuatha Dé Danann, el pueblo sobrenatural que, según las antiguas leyendas, habitó Irlanda antes de la llegada de los antepasados de los irlandeses actuales. Entre aquellas figuras vinculadas a la magia, la sabiduría y las artes, él ocupaba un lugar destacado. Su nombre suele interpretarse como «el dios bueno», no porque fuera siempre bondadoso, sino porque se le atribuían muchas habilidades extraordinarias.
 
-Su nombre suele interpretarse como «el dios bueno», aunque aquello no significaba que fuera siempre amable ni que careciera de temperamento. Era un personaje imponente: poderoso en el combate, generoso en los banquetes y dotado de un humor bastante terrenal. En las historias que se contaban sobre él, la fuerza y la magia solían ir de la mano.
+Su arpa era una de ellas. De madera labrada y cuerdas delicadas, parecía pequeña cuando descansaba entre sus manos enormes. Pero bastaban unas notas para que los presentes dejaran de hablar y escucharan. Había melodías que despertaban el llanto, otras que provocaban una alegría incontenible y una tercera capaz de vencer al sueño más inquieto.
 
-Entre sus posesiones más extraordinarias destacaba un arpa cuya música era capaz de hacer llorar, reír o dormir a cuantos la escuchaban. Uaithne era el músico a su servicio y conocía bien aquel instrumento; sin embargo, solo el Dagda podía llamarlo para que regresara cuando se encontraba lejos de él.
+Uaithne, el arpista que servía al Dagda, conocía aquellos sonidos mejor que nadie. Había pasado incontables veladas tocando para su señor y sus invitados. Y, sin embargo, el instrumento guardaba un secreto: cuando el Dagda lo llamaba por sus nombres antiguos, el arpa acudía a él.
 
 Por aquellos tiempos, los Tuatha Dé Danann estaban enfrentados a los fomorianos, sus temibles rivales. Después de una terrible batalla en Mag Tuired, los guerreros vencedores regresaron bajo la lluvia. Debería haber sido una noche de canciones.
 
