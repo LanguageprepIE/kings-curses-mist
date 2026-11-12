@@ -1,0 +1,26 @@
+/* Contextual mythological reference cards; accessible, calm, and optional. */
+.salmon-reader .myth-term{
+  font:inherit;color:inherit;background:transparent;border:0;padding:0;
+  border-bottom:1px dotted #638a7d;cursor:pointer;text-decoration:none;
+  text-underline-offset:.2em;
+}
+.salmon-reader .myth-term:hover,.salmon-reader .myth-term:focus-visible{
+  color:#23604b;border-bottom:2px solid currentColor;outline-offset:3px;
+}
+.salmon-reader.night .myth-term{border-bottom-color:#cdb78f}
+.salmon-reader.night .myth-term:hover,.salmon-reader.night .myth-term:focus-visible{color:#e9d0a0}
+.myth-dialog{
+  border:1px solid #c5b793;border-radius:14px;background:#fbf2df;color:#26382f;
+  padding:0;width:min(92vw,440px);max-height:calc(100dvh - 35px);
+  box-shadow:0 14px 48px #0d211d55;
+}
+.myth-dialog::backdrop{background:rgba(13,28,25,.48)}
+.myth-dialog-inner{padding:1.7rem 1.6rem 1.5rem;position:relative}
+.myth-eyebrow{font-size:.7rem;letter-spacing:.11em;color:#6c806d;font-weight:600;margin-right:2rem}
+.myth-dialog h3{font-size:1.6rem;line-height:1.25;margin:.65rem 0;color:#234638}
+.myth-dialog p{line-height:1.65;margin:.4rem 0 1.1rem;font-size:1.05rem}
+.myth-dismiss{position:absolute;right:.7rem;top:.6rem;border:0;background:transparent;
+  font-size:1.8rem;cursor:pointer;color:#344d41;width:44px;height:44px;border-radius:8px}
+.myth-dismiss:focus-visible,.myth-full:focus-visible{outline:2px solid #335d4c;outline-offset:3px}
+.myth-full{display:inline-block;color:#1f5743;text-decoration:underline;font-weight:600}
+@media(prefers-reduced-motion:reduce){.myth-dialog{scroll-behavior:auto}}
