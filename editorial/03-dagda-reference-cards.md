@@ -47,8 +47,8 @@ EN: The mythological battle associated with the conflict between the Tuatha Dé 
 ES: Batalla legendaria vinculada al enfrentamiento entre los Tuatha Dé Danann y los fomorianos.
 Do not equate a fictionalized hall interior with documented archaeology.
 
-## Illustration plan — three approved concepts; exact files pending repository upload
-1. **The missing harp** / **El arpa ausente**: Dagda, Lugh, Ogma after battle in Dagda’s hall. Main illustration for narrative opening.
-2. **The harp answers** / **La llamada del arpa**: harp flies towards Dagda amid alarmed Fomorians. **Also the chapter’s cover image.**
-3. **The three melodies** / **Las tres melodías**: Dagda plays to the feasters. The painting uses multiple emotional reactions in one symbolic montage rather than a literal single instant in the narrative.
+## Illustration plan — three approved concepts; image files awaiting repository upload
+1. **The missing harp** / **El arpa ausente** — `assets/dagda-empty-hall-4x5.webp`: Dagda, Lugh, Ogma after battle in Dagda’s hall. Main illustration for narrative opening.
+2. **The harp answers** / **La llamada del arpa** — `assets/dagda-harp-returns-4x5.webp`: harp flies towards Dagda amid alarmed Fomorians. **Also the chapter’s cover image.**
+3. **The three melodies** / **Las tres melodías** — `assets/dagda-three-melodies-4x5.webp`: Dagda plays to the feasters. The painting uses multiple emotional reactions in one symbolic montage rather than a literal single instant in the narrative.
 All interior illustrations: vertical 4:5, painterly digital oil/gouache, consistent cast, bilingual alt text, same characters across scenes. Keep the illustrated cover and reader placement in logical reading order.
