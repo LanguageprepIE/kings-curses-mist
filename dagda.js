@@ -41,7 +41,7 @@ for(const [groupIndex,section] of sections.entries()){
 return result;
 }
 async function load(){
-const [en,es]=await Promise.all(['en','es'].map(l=>fetch('editorial/03-dagdas-harp.'+l+'.md').then(r=>{if(!r.ok)throw Error('Unable to fetch story');return r.text()})));
+const [en,es]=await Promise.all(['en','es'].map(l=>fetch('editorial/03-dagdas-harp.'+l+'.md?v=3').then(r=>{if(!r.ok)throw Error('Unable to fetch story');return r.text()})));
 pages.en=parse(en);pages.es=parse(es);
 if(!pages.en.length||!pages.es.length)throw Error('Empty story');
 page=Math.min(page,pages[lang].length);
