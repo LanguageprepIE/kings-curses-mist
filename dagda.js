@@ -16,18 +16,27 @@ es:[{q:'¿Qué se llevaron los fomorianos?',a:['El arpa del Dagda y a Uaithne, s
 const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const t=()=>labels[lang];
 function parse(md){
-const groups=md.split(/\n(?=## [1-9]\. )/).filter(part=>/^## [1-9]\./.test(part));
+const sections=md.split(/\n(?=## [1-9]\. )/).filter(part=>/^## [1-9]\./.test(part));
 const result=[];
-for(const [groupIndex,group] of groups.entries()){
-const [heading,...rest]=group.trim().split('\n');
-const title=heading.replace(/^## [1-9]\. /,'');
-const paras=rest.join('\n').trim().split(/\n\s*\n/).filter(Boolean);
-let chunk=[],size=0;
-for(const p of paras){
-if(chunk.length>=3&&size+p.length>1500){result.push({title,paras:chunk,groupIndex});chunk=[];size=0}
-chunk.push(p);size+=p.length;
-}
-if(chunk.length)result.push({title,paras:chunk,groupIndex});
+for(const [groupIndex,section] of sections.entries()){
+  const [heading,...rest]=section.trim().split('\n');
+  const title=heading.replace(/^## [1-9]\. /,'');
+  const paras=rest.join('\n').trim().split(/\n\s*\n/).filter(Boolean);
+  const total=paras.reduce((sum,p)=>sum+p.length,0);
+  // Split only long narrative movements; balance their pages to avoid tiny fragments.
+  const targetPages=Math.max(1,Math.round(total/1800));
+  let chunks=[],chunk=[],length=0,consumed=0;
+  for(let i=0;i<paras.length;i++){
+    const remaining=paras.slice(i).reduce((sum,p)=>sum+p.length,0);
+    const remainingSlots=targetPages-chunks.length;
+    const goal=Math.ceil((remaining+length)/Math.max(1,remainingSlots));
+    if(chunk.length && remainingSlots>1 && length>=goal && remaining>400){
+      chunks.push(chunk);chunk=[];length=0;
+    }
+    chunk.push(paras[i]);length+=paras[i].length;
+  }
+  if(chunk.length)chunks.push(chunk);
+  for(const group of chunks)result.push({title,paras:group,groupIndex});
 }
 return result;
 }
