@@ -6,17 +6,27 @@
 **Illustrations:** Pending narrative approval (normally 2–3 original vertical 4:5 works)
 **Narrator:** Third-person storyteller; no obligatory framing voice.
 
-## 1. A Silence After Battle
+## 1. The Keeper of Three Melodies
 
-The Dagda could tell when something was missing from his hall.
+I once heard an old story told on a rain-soaked evening in Ireland. The storyteller spoke of a battle, a stolen harp and a hall filled with enemies. Yet when the tale was finished, it was the music I remembered. Perhaps that is why the story has travelled so far beyond the hall where it was first imagined.
+
+Long before the towns and roads of modern Ireland, the Tuatha Dé Danann were said to inhabit the island. They were a people of the old legends, gifted in craftsmanship, poetry and magic, and their fortunes were bound to the land itself. Among their greatest figures was the Dagda.
+
+His name is often understood as 'the good god', though the title did not mean that he was always gentle or incapable of anger. He was a mighty, larger-than-life figure: powerful in battle, generous at a feast and possessed of an earthy sense of humour. In stories about him, strength and enchantment were seldom far apart.
+
+Of all the wonders associated with him, one of the strangest was a harp whose music could move an entire gathering to tears, laughter or sleep. The musician who served him was Uaithne. Under his hands the instrument sang, but the Dagda alone could summon it when it was beyond reach.
+
+In those days, the Tuatha Dé Danann were fighting the Fomorians, their formidable rivals. After a terrible battle at Mag Tuired, the victorious warriors came home through the rain. It ought to have been a night for songs.
+
+But there was no music.
+
+The Dagda noticed the silence the moment he entered his hall.
 
 There was the sound of feet crossing the rush-covered floor, the clatter of bowls, the low voices of those returning from battle. Outside, rain slipped from the eaves and gathered in the ruts of the courtyard. All the familiar sounds were there.
 
 Except one.
 
-Beside the great fire stood an empty place where a harp had rested. Its carved wooden frame had been broad enough to reach the Dagda's shoulder, and its strings could bring laughter to a weary gathering or turn a noisy room quiet. Now there was only a pale mark against the wall.
-
-The battle at Mag Tuired had ended in victory for the Tuatha Dé Danann. Their enemies, the Fomorians, had fled. But in the confusion of their retreat they had taken the harp and its keeper, Uaithne, with them.
+Beside the great fire stood an empty place where the harp had rested. Now only a pale mark showed against the wall. In the confusion of their retreat, the Fomorians had carried away both the instrument and Uaithne, its keeper.
 
 The Dagda stood for a while before the empty wall.
 
