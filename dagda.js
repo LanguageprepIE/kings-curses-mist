@@ -25,6 +25,72 @@ en:[{q:'What did the Fomorians take?',a:['The Dagda’s harp and its keeper Uait
 es:[{q:'¿Qué se llevaron los fomorianos?',a:['El arpa del Dagda y a Uaithne, su custodio.','El caldero del Dagda.','La espada de Lugh.'],correct:0},{q:'¿Cómo regresó el arpa?',a:['Ogma trepó por la pared.','El Dagda la llamó por sus antiguos nombres.','Bres la devolvió.'],correct:1},{q:'¿Qué provocó la tercera melodía?',a:['Todos bailaron.','El salón comenzó a arder.','Los fomorianos se quedaron dormidos.'],correct:2}]};
 const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const t=()=>labels[lang];
+
+const mythTerms=[
+['dagda',['Dagda']],['tuatha',['Tuatha Dé Danann']],['uaithne',['Uaithne','Úaithne']],
+['fomorians',['Fomorians','fomorianos']],['magt',['Mag Tuired']],['lugh',['Lugh']],
+['ogma',['Ogma']],['bres',['Bres']],['elatha',['Elatha']]
+];
+const mythData={
+en:{
+dagda:['The Dagda','A powerful figure of the Tuatha Dé Danann, associated with strength, abundance and magic.'],
+tuatha:['Tuatha Dé Danann','A supernatural people of Irish legend associated with magic, skill and struggles for Ireland.'],
+uaithne:['Uaithne','The Dagda’s harper in the medieval story, not the name of the harp in that source.'],
+fomorians:['Fomorians','Formidable rivals of the Tuatha Dé Danann in the old legends.'],
+magt:['Mag Tuired','The legendary battle between the Tuatha Dé Danann and the Fomorians.'],
+lugh:['Lugh','A champion of the Tuatha Dé Danann, renowned for his many skills.'],
+ogma:['Ogma','A great warrior among the Tuatha Dé Danann.'],
+bres:['Bres','A figure in the Fomorian hall, identified as a son of Elatha.'],
+elatha:['Elatha','The father of Bres in the medieval account.']
+},es:{
+dagda:['El Dagda','Figura de los Tuatha Dé Danann asociada con la fuerza, la abundancia y la magia.'],
+tuatha:['Tuatha Dé Danann','Pueblo sobrenatural de la mitología irlandesa, vinculado con la magia, las artes y la disputa por Irlanda.'],
+uaithne:['Uaithne','Arpista del Dagda en la fuente medieval. En ese texto no es el nombre del arpa.'],
+fomorians:['Fomorianos','Poderosos rivales de los Tuatha Dé Danann en las antiguas leyendas.'],
+magt:['Mag Tuired','Batalla legendaria entre los Tuatha Dé Danann y los fomorianos.'],
+lugh:['Lugh','Campeón de los Tuatha Dé Danann, famoso por sus numerosas habilidades.'],
+ogma:['Ogma','Gran guerrero de los Tuatha Dé Danann.'],
+bres:['Bres','Personaje presente en el salón fomoriano; hijo de Elatha según la fuente.'],
+elatha:['Elatha','Padre de Bres en la fuente medieval.']
+}};
+function markedParagraph(raw,paragraphIndex){
+ const found=[];
+ for(const [id,forms] of mythTerms){
+  const form=forms.find(x=>raw.toLocaleLowerCase().includes(x.toLocaleLowerCase()));
+  if(!form)continue;
+  let earlier=false;
+  outer:for(let i=0;i<=page;i++){
+   const limit=i===page?paragraphIndex:pages[lang][i].paras.length;
+   for(let j=0;j<limit;j++){
+    if(forms.some(x=>pages[lang][i].paras[j].toLocaleLowerCase().includes(x.toLocaleLowerCase()))){earlier=true;break outer}
+   }
+  }
+  if(!earlier)found.push({at:raw.toLocaleLowerCase().indexOf(form.toLocaleLowerCase()),len:form.length,id});
+ }
+ found.sort((a,b)=>a.at-b.at);
+ let cursor=0,result='';
+ for(const m of found){
+  if(m.at<cursor)continue;
+  result+=safe(raw.slice(cursor,m.at));
+  const label=raw.slice(m.at,m.at+m.len);
+  result+='<button type="button" class="myth-term" data-myth="'+m.id+'" aria-label="'+safe(label)+' — '+(lang==='es'?'ver ficha':'view reference card')+'">'+safe(label)+'</button>';
+  cursor=m.at+m.len;
+ }
+ return result+safe(raw.slice(cursor));
+}
+function mythDialog(){
+ return '<dialog id="mythDialog" class="myth-dialog" aria-labelledby="mythHeading"><div class="myth-dialog-inner"><button type="button" class="myth-dismiss" data-myth-close aria-label="'+(lang==='es'?'Cerrar':'Close')+'">×</button><div class="myth-eyebrow">'+(lang==='es'?'EL MUNDO DETRÁS DE LAS LEYENDAS':'THE WORLD BEHIND THE LEGENDS')+'</div><h3 id="mythHeading"></h3><p id="mythDescription"></p><a id="mythFull" class="myth-full" href="world.html">'+(lang==='es'?'Ver en la enciclopedia completa':'Read the full encyclopedia entry')+' →</a></div></dialog>';
+}
+function openMyth(id){
+ const item=mythData[lang][id],dialog=document.getElementById('mythDialog');
+ if(!item||!dialog)return;
+ dialog.querySelector('#mythHeading').textContent=item[0];
+ dialog.querySelector('#mythDescription').textContent=item[1];
+ dialog.querySelector('#mythFull').href='world.html#'+id;
+ dialog.showModal();
+ dialog.querySelector('[data-myth-close]').focus();
+}
+
 function parse(md){
 const sections=md.split(/\n(?=## [1-9]\. )/).filter(part=>/^## [1-9]\./.test(part));
 const result=[];
@@ -83,10 +149,10 @@ function intro(){return '<section class="salmon-opening"><img src="assets/dagda-
 function reader(){
 const n=pages[lang].length;
 const beyond=page===n;const p=beyond?null:pages[lang][page];const sc=scene();
-const body=beyond?cultural[lang].map(x=>'<section class="beyond-note"><h3>'+safe(x.title)+'</h3><p>'+safe(x.text)+'</p></section>').join(''):p.paras.map(x=>'<p>'+safe(x)+'</p>').join('');
+const body=beyond?cultural[lang].map(x=>'<section class="beyond-note"><h3>'+safe(x.title)+'</h3><p>'+safe(x.text)+'</p></section>').join(''):p.paras.map((x,i)=>'<p>'+markedParagraph(x,i)+'</p>').join('');
 const heading=beyond?t().beyond:p.title;
 const img='<div class="page-image '+(sc.decor?'decorative':'')+'" style="--scene-image:url(&quot;'+sc.src+'&quot;)"><img src="'+sc.src+'" alt="'+safe(sc.alt)+'" onerror="this.onerror=null;this.src=\'assets/ornament-triskele.webp\'" loading="lazy"><div class="image-caption">'+safe(heading)+'</div></div>';
-return '<div class="reader-wrap salmon-reader '+(night?'night':'')+'" style="--font-scale:'+fontScale+'"><div class="reader-tools"><div class="left"><a class="tool" href="index.html">'+t().back+'</a><span class="mini-label">03 · '+t().title+'</span></div><div class="right"><button class="tool" data-action="smaller">A−</button><button class="tool" data-action="larger">A+</button><button class="tool" data-action="theme">'+(night?t().day:t().night)+'</button><button class="tool" data-action="speak">'+t().read+' ▶</button><button class="tool" data-action="stop">■ '+t().stop+'</button></div></div><article class="spread">'+img+'<div class="page-text"><div class="folio">'+t().title+' · '+(page+1)+' / '+(n+1)+'</div><h2>'+safe(heading)+'</h2><div class="prose" id="spokenText">'+body+'</div></div></article><nav class="reader-navigation"><button class="button secondary" data-action="prev" '+(page===0?'disabled':'')+'>← '+t().previous+'</button><span class="page-count">'+(page+1)+' / '+(n+1)+'</span><button class="button" data-action="next">'+(page===n?t().after:page===n-1?t().beyond:t().next)+' →</button></nav></div>';
+return '<div class="reader-wrap salmon-reader '+(night?'night':'')+'" style="--font-scale:'+fontScale+'"><div class="reader-tools"><div class="left"><a class="tool" href="index.html">'+t().back+'</a><span class="mini-label">03 · '+t().title+'</span></div><div class="right"><button class="tool" data-action="smaller">A−</button><button class="tool" data-action="larger">A+</button><button class="tool" data-action="theme">'+(night?t().day:t().night)+'</button><button class="tool" data-action="speak">'+t().read+' ▶</button><button class="tool" data-action="stop">■ '+t().stop+'</button></div></div><article class="spread">'+img+'<div class="page-text"><div class="folio">'+t().title+' · '+(page+1)+' / '+(n+1)+'</div><h2>'+safe(heading)+'</h2><div class="prose" id="spokenText">'+body+'</div></div></article><nav class="reader-navigation"><button class="button secondary" data-action="prev" '+(page===0?'disabled':'')+'>← '+t().previous+'</button><span class="page-count">'+(page+1)+' / '+(n+1)+'</span><button class="button" data-action="next">'+(page===n?t().after:page===n-1?t().beyond:t().next)+' →</button></nav></div>'+mythDialog();
 }
 function questions(){return '<section class="qa"><button class="tool" data-action="read">'+t().return+'</button><h2>'+t().question+'</h2><h3>'+t().understanding+'</h3>'+quiz[lang].map((q,i)=>'<fieldset class="question"><legend>'+(i+1)+'. '+safe(q.q)+'</legend>'+q.a.map((a,j)=>'<label class="choice"><input type="radio" name="q'+i+'" value="'+j+'"> '+safe(a)+'</label>').join('')+'<p class="feedback" id="feedback'+i+'" aria-live="polite"></p></fieldset>').join('')+'<aside><h3>'+t().reflect+'</h3><p>'+t().reflectText+'</p></aside><a class="button" href="index.html">'+t().finish+'</a></section>'}
 function bibliography(){
@@ -95,6 +161,7 @@ document.getElementById('sourceList').innerHTML='<h3>'+t().title+'</h3><h4>'+(la
 }
 function render(){document.documentElement.lang=lang;document.title=t().title+' — '+t().book;document.getElementById('brandTitle').textContent='✧ '+t().book;document.getElementById('credit').textContent=(lang==='es'?'Creado y dirigido por David Martín Guerrero · Adaptación original de una leyenda tradicional irlandesa, con apoyo de IA para el texto y las ilustraciones.':'Created and curated by David Martín Guerrero · Original literary retelling of Irish tradition, with AI assistance for text and illustrations.');bibliography();app.innerHTML=view==='intro'?intro():view==='reader'?reader():questions();}
 function speak(){if(!('speechSynthesis'in window)||view!=='reader')return;stop();const n=pages[lang].length;const txt=page===n?cultural[lang].map(v=>v.title+'. '+v.text).join(' '):pages[lang][page].title+'. '+pages[lang][page].paras.join(' ');const u=new SpeechSynthesisUtterance(txt);u.lang=lang==='es'?'es-ES':'en-IE';u.rate=.88;speechSynthesis.speak(u)}
+document.addEventListener('click',e=>{const term=e.target.closest('[data-myth]');if(term){openMyth(term.dataset.myth);return}if(e.target.closest('[data-myth-close]')){document.getElementById('mythDialog')?.close();return}if(e.target.id==='mythDialog'){e.target.close();return}});
 document.addEventListener('click',e=>{const x=e.target.closest('[data-action]');if(!x)return;switch(x.dataset.action){case'read':go('reader');break;case'next':if(page===pages[lang].length){go('quiz')}else{page++;save();go('reader')}break;case'prev':if(page>0){page--;save();go('reader')}break;case'smaller':fontScale=Math.max(.9,Math.round((fontScale-.1)*100)/100);localStorage.setItem('okcm-font',fontScale);render();break;case'larger':fontScale=Math.min(1.55,Math.round((fontScale+.1)*100)/100);localStorage.setItem('okcm-font',fontScale);render();break;case'theme':night=!night;render();break;case'speak':speak();break;case'stop':stop();break}});
 document.addEventListener('change',e=>{if(!e.target.matches('input[type=radio]'))return;const i=Number(e.target.name.slice(1));document.getElementById('feedback'+i).textContent=Number(e.target.value)===quiz[lang][i].correct?t().correct:t().wrong});
 language.addEventListener('change',e=>{lang=e.target.value;localStorage.setItem('okcm-language',lang);page=Math.min(Number(localStorage.getItem('okcm-dagda-page-'+lang)||0),pages[lang].length);stop();render()});
