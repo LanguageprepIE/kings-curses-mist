@@ -59,19 +59,33 @@ render();
 }
 function save(){localStorage.setItem('okcm-dagda-page-'+lang,String(page))}
 function stop(){if('speechSynthesis'in window)speechSynthesis.cancel()}
-function illustratedPage(index){return false}
+function illustratedPage(index){
+const n=pages[lang].length;
+if(index>=n)return false;
+const item=pages[lang][index];
+if(item.groupIndex===0)return index===0;
+if(item.groupIndex===2)return index===0||pages[lang][index-1]?.groupIndex!==2;
+if(item.groupIndex===3)return index===0||pages[lang][index-1]?.groupIndex!==3;
+return false;
+}
 function scene(){
+const items=pages[lang],item=items[page];
 const ornaments=['assets/ornament-knot-small.webp','assets/ornament-triskele.webp','assets/ornament-oval.webp','assets/ornament-diamond.webp'];
-return {src:ornaments[page%ornaments.length],alt:'',decor:true};
+const ornament={src:ornaments[page%ornaments.length],alt:'',decor:true};
+if(!item)return ornament;
+if(item.groupIndex===0&&page===0)return {src:'assets/dagda-empty-hall-4x5.webp',alt:lang==='es'?'El Dagda, Lugh y Ogma observan el lugar vacío donde descansaba el arpa':'The Dagda, Lugh and Ogma face the empty place where the harp had rested',decor:false};
+if(item.groupIndex===2 && (page===0||items[page-1]?.groupIndex!==2))return {src:'assets/dagda-harp-returns-4x5.webp',alt:lang==='es'?'El arpa regresa volando hacia el Dagda en el salón de los fomorianos':'The harp flies back to the Dagda in the Fomorian hall',decor:false};
+if(item.groupIndex===3 && (page===0||items[page-1]?.groupIndex!==3))return {src:'assets/dagda-three-melodies-4x5.webp',alt:lang==='es'?'El Dagda toca el arpa mientras los fomorianos lloran, ríen y se duermen':'The Dagda plays as the Fomorians weep, laugh and fall asleep',decor:false};
+return ornament;
 }
 function go(v){stop();view=v;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
-function intro(){return '<section class="salmon-opening"><div style="display:grid;place-items:center;min-height:240px;background:#eee4cf;border-radius:7px"><img src="assets/ornament-triskele.webp" alt="" style="max-width:200px;max-height:200px;object-fit:contain"></div><div class="mini-label">03 · '+t().minutes+' · '+(lang==='es'?'BORRADOR':'DRAFT')+'</div><h1>'+t().title+'</h1><p>'+t().desc+'</p><button class="button" data-action="read">'+t().open+' →</button></section>'}
+function intro(){return '<section class="salmon-opening"><img src="assets/dagda-harp-returns-4x5.webp" alt="'+(lang==='es'?'El arpa mágica regresa al Dagda':'The magical harp returns to the Dagda')+'" onerror="this.src=\'assets/ornament-triskele.webp\'" style="max-height:560px;object-fit:contain;background:#eee4cf"><div class="mini-label">03 · '+t().minutes+' · '+(lang==='es'?'BORRADOR':'DRAFT')+'</div><h1>'+t().title+'</h1><p>'+t().desc+'</p><button class="button" data-action="read">'+t().open+' →</button></section>'}
 function reader(){
 const n=pages[lang].length;
 const beyond=page===n;const p=beyond?null:pages[lang][page];const sc=scene();
 const body=beyond?cultural[lang].map(x=>'<section class="beyond-note"><h3>'+safe(x.title)+'</h3><p>'+safe(x.text)+'</p></section>').join(''):p.paras.map(x=>'<p>'+safe(x)+'</p>').join('');
 const heading=beyond?t().beyond:p.title;
-const img='<div class="page-image '+(sc.decor?'decorative':'')+'" style="--scene-image:url(&quot;'+sc.src+'&quot;)"><img src="'+sc.src+'" alt="'+safe(sc.alt)+'" loading="lazy"><div class="image-caption">'+safe(heading)+'</div></div>';
+const img='<div class="page-image '+(sc.decor?'decorative':'')+'" style="--scene-image:url(&quot;'+sc.src+'&quot;)"><img src="'+sc.src+'" alt="'+safe(sc.alt)+'" onerror="this.onerror=null;this.src=\'assets/ornament-triskele.webp\'" loading="lazy"><div class="image-caption">'+safe(heading)+'</div></div>';
 return '<div class="reader-wrap salmon-reader '+(night?'night':'')+'" style="--font-scale:'+fontScale+'"><div class="reader-tools"><div class="left"><a class="tool" href="index.html">'+t().back+'</a><span class="mini-label">03 · '+t().title+'</span></div><div class="right"><button class="tool" data-action="smaller">A−</button><button class="tool" data-action="larger">A+</button><button class="tool" data-action="theme">'+(night?t().day:t().night)+'</button><button class="tool" data-action="speak">'+t().read+' ▶</button><button class="tool" data-action="stop">■ '+t().stop+'</button></div></div><article class="spread">'+img+'<div class="page-text"><div class="folio">'+t().title+' · '+(page+1)+' / '+(n+1)+'</div><h2>'+safe(heading)+'</h2><div class="prose" id="spokenText">'+body+'</div></div></article><nav class="reader-navigation"><button class="button secondary" data-action="prev" '+(page===0?'disabled':'')+'>← '+t().previous+'</button><span class="page-count">'+(page+1)+' / '+(n+1)+'</span><button class="button" data-action="next">'+(page===n?t().after:page===n-1?t().beyond:t().next)+' →</button></nav></div>';
 }
 function questions(){return '<section class="qa"><button class="tool" data-action="read">'+t().return+'</button><h2>'+t().question+'</h2><h3>'+t().understanding+'</h3>'+quiz[lang].map((q,i)=>'<fieldset class="question"><legend>'+(i+1)+'. '+safe(q.q)+'</legend>'+q.a.map((a,j)=>'<label class="choice"><input type="radio" name="q'+i+'" value="'+j+'"> '+safe(a)+'</label>').join('')+'<p class="feedback" id="feedback'+i+'" aria-live="polite"></p></fieldset>').join('')+'<aside><h3>'+t().reflect+'</h3><p>'+t().reflectText+'</p></aside><a class="button" href="index.html">'+t().finish+'</a></section>'}
