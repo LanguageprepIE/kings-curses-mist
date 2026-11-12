@@ -1,13 +1,13 @@
-/* Contextual mythological reference cards; accessible, calm, and optional. */
+/* Inline terms that open contextual reference cards. */
 .salmon-reader .myth-term{
-  font:inherit;color:inherit;background:transparent;border:0;padding:0;
-  border-bottom:1px dotted #638a7d;cursor:pointer;text-decoration:none;
-  text-underline-offset:.2em;
+  font:inherit;color:inherit;background:transparent;border:0;padding:0;cursor:pointer;
+  text-decoration:underline;
+  text-decoration-thickness:.09em;
+  text-underline-offset:.18em;
 }
 .salmon-reader .myth-term:hover,.salmon-reader .myth-term:focus-visible{
-  color:#23604b;border-bottom:2px solid currentColor;outline-offset:3px;
+  color:#23604b;outline-offset:3px;
 }
-.salmon-reader.night .myth-term{border-bottom-color:#cdb78f}
 .salmon-reader.night .myth-term:hover,.salmon-reader.night .myth-term:focus-visible{color:#e9d0a0}
 .myth-dialog{
   border:1px solid #c5b793;border-radius:14px;background:#fbf2df;color:#26382f;
