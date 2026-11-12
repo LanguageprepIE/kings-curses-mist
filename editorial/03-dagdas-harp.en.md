@@ -8,13 +8,13 @@
 
 ## 1. The Keeper of Three Melodies
 
-I once heard an old story told on a rain-soaked evening in Ireland. The storyteller spoke of a battle, a stolen harp and a hall filled with enemies. Yet when the tale was finished, it was the music I remembered. Perhaps that is why the story has travelled so far beyond the hall where it was first imagined.
+When the Dagda entered a hall, people noticed. He was broad and bearded, with a booming laugh, as ready for a feast as for a fight. Yet those who knew him understood that one pleasure mattered to him more than most: music.
 
-Long before the towns and roads of modern Ireland, the Tuatha Dé Danann were said to inhabit the island. They were a people of the old legends, gifted in craftsmanship, poetry and magic, and their fortunes were bound to the land itself. Among their greatest figures was the Dagda.
+The Dagda belonged to the Tuatha Dé Danann, the supernatural people who, in Ireland's old legends, inhabited the island before the ancestors of its present-day people arrived. Among these figures associated with magic, learning and skilled crafts, the Dagda held a prominent place. His name is commonly understood as 'the good god', not because he was always kind, but because he was said to possess many remarkable abilities.
 
-His name is often understood as 'the good god', though the title did not mean that he was always gentle or incapable of anger. He was a mighty, larger-than-life figure: powerful in battle, generous at a feast and possessed of an earthy sense of humour. In stories about him, strength and enchantment were seldom far apart.
+One of his wonders was a harp. Its carved frame and delicate strings seemed almost small between his enormous hands, yet a few notes were enough to silence a gathering. It could stir its listeners to tears, set them laughing without restraint, or draw them into a sleep they could not resist.
 
-Of all the wonders associated with him, one of the strangest was a harp whose music could move an entire gathering to tears, laughter or sleep. The musician who served him was Uaithne. Under his hands the instrument sang, but the Dagda alone could summon it when it was beyond reach.
+Uaithne, the Dagda's harper, knew its music better than anyone. He had played for his master and his guests on countless evenings. But the instrument held a secret: when the Dagda called it by its ancient names, the harp would come to him.
 
 In those days, the Tuatha Dé Danann were fighting the Fomorians, their formidable rivals. After a terrible battle at Mag Tuired, the victorious warriors came home through the rain. It ought to have been a night for songs.
 
