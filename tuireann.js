@@ -128,12 +128,17 @@ return false;
 function scene(){
 const items=pages[lang],item=items[page];
 const ornaments=['assets/ornament-knot-small.webp','assets/ornament-triskele.webp','assets/ornament-oval.webp','assets/ornament-diamond.webp'];
-return {src:ornaments[page%ornaments.length],alt:'',decor:true};
+const fallback={src:ornaments[page%ornaments.length],alt:'',decor:true};
+if(!item)return fallback;
+const first=page===0||items[page-1]?.groupIndex!==item.groupIndex;
+if(first&&item.groupIndex===2)return {src:'assets/tuireann-departure-4x5.webp',alt:lang==='es'?'Tuireann despide a sus hijos en la Barredora de Olas':'Tuireann watches his sons leave on the Wave-Sweeper',decor:false};
+if(first&&item.groupIndex===3)return {src:'assets/tuireann-golden-apples-4x5.webp',alt:lang==='es'?'Tres halcones huyen con las manzanas doradas':'Three hawks flee with the golden apples',decor:false};
+if(first&&item.groupIndex===6)return {src:'assets/tuireann-three-cries-4x5.webp',alt:lang==='es'?'Los hermanos heridos gritan juntos desde la colina':'The wounded brothers cry out together on the hill',decor:false};
+return fallback;
 }
-
 function go(v){stop();view=v;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
 function intro(){
-return '<section class="salmon-opening"><img src="assets/ornament-medallion.webp" alt="" style="object-fit:contain;background:#eee4cf;max-height:240px"><div class="mini-label">04 · '+t().minutes+' · '+(lang==='es'?'TEXTO VALIDADO':'LITERARY TEXT APPROVED')+'</div><h1>'+t().title+'</h1><p>'+t().desc+'</p><p class="qa">'+(lang==='es'?'Narración aprobada. Ilustraciones definitivas pendientes de selección y revisión.':'Narrative approved. Final illustrations are still to be selected and reviewed.')+'</p><button class="button" data-action="read">'+t().open+' →</button></section>';
+return '<section class="salmon-opening"><img src="assets/tuireann-departure-4x5.webp" alt="" onerror="this.onerror=null;this.src=&quot;assets/ornament-triskele.webp&quot;" style="object-fit:contain;background:#eee4cf;max-height:560px"><div class="mini-label">04 · '+t().minutes+' · '+(lang==='es'?'TEXTO VALIDADO':'LITERARY TEXT APPROVED')+'</div><h1>'+t().title+'</h1><p>'+t().desc+'</p><p class="qa">'+(lang==='es'?'Narración aprobada. Ilustraciones definitivas pendientes de selección y revisión.':'Narrative approved. Final illustrations are still to be selected and reviewed.')+'</p><button class="button" data-action="read">'+t().open+' →</button></section>';
 }
 function reader(){
 const n=pages[lang].length;
