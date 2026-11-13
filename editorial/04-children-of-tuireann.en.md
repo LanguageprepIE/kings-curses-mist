@@ -1,14 +1,14 @@
 # Chapter 04 — The Children of Tuireann
 
-**Status:** Bilingual literary draft for David's review; artwork and final publication PENDING.
+**Status:** English literary narrative approved by David on 13 November 2026. Final illustrations and visual review remain pending.
 **Collection:** Of Kings, Curses and Mist
 **Edition:** English, 13 November 2026
 **Narration:** Literary third person; dialogue and characterisation creatively reconstructed.
-**Art:** Temporary Celtic ornaments. Final illustrations follow literary approval.
+**Art:** Temporary Celtic ornaments; final illustrations still to be selected and approved.
 
 ## 1. A Pig Among the Hazel Trees
 
-Cian recognised Brian before he made out the faces of his brothers. The three men stood where the road crossed the plain of Muirthemne. A feud had divided their households for so long that few could remember the first wrong.
+Cian recognised Brian before he made out the faces of the other two men. They stood where the road crossed the plain of Muirthemne. Cian was a son of Cáinte; Brian, Iuchar and Iucharba were the sons of Tuireann. A feud had divided the two families for so long that few could remember the first wrong.
 
 Cian was travelling alone. Near the hazel trees, pigs were rooting in the earth. He glanced towards the three brothers, drew out his enchanted wand and touched it to his chest. A moment later, another pig was nosing among the herd.
 
@@ -16,7 +16,7 @@ Brian had seen the movement.
 
 “There,” he said.
 
-Iuchar could not tell the animals apart. Brian struck his brothers with the wand and changed them into swift hounds. The herd scattered, squealing through broken branches. The dogs singled out one pig and drove it towards Brian, who met it with his spear.
+Iuchar could not tell the animals apart. Brian drew his own enchanted wand, touched his brothers with it and changed them into swift hounds. The herd scattered, squealing through broken branches. The dogs singled out one pig and drove it towards Brian, who met it with his spear.
 
 A human voice rose from the wounded animal.
 
@@ -106,7 +106,7 @@ Dressed in borrowed clothes, they requested an audience. The king welcomed the d
 
 “You have not come here to sing,” he said.
 
-“We have come to ask for what your poem already knows you possess,” Brian answered.
+“We have come for the skin my verses describe,” Brian answered.
 
 The refusal was immediate. Guards closed around the brothers. Brian drew his sword; overturned cups rang against the floor, and the room filled with shouting.
 
