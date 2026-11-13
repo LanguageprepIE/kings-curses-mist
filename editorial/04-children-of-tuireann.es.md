@@ -1,14 +1,14 @@
 # Leyenda 04 — Los hijos de Tuireann
 
-**Estado:** Borrador literario bilingüe para revisión de David; ilustraciones y publicación final PENDIENTES.
+**Estado:** Narración literaria española validada por David el 13 de noviembre de 2026. Ilustraciones definitivas y revisión visual pendientes.
 **Colección:** De reyes, maldiciones y niebla
 **Edición:** Español de España, 13 de noviembre de 2026
 **Narración:** Tercera persona literaria; diálogos y caracterización recreados.
-**Imágenes:** Motivos ornamentales provisionales. Las ilustraciones definitivas se seleccionarán tras aprobar la narración.
+**Imágenes:** Motivos ornamentales provisionales; ilustraciones definitivas por seleccionar y validar.
 
 ## 1. Un cerdo entre los avellanos
 
-Cian reconoció a Brian antes de distinguir los rostros de sus hermanos. Los tres hombres aguardaban junto al camino, donde la llanura de Muirthemne descendía hacia unos pastos. No era un encuentro casual. Entre las familias de Cian y de Tuireann había una enemistad tan antigua que nadie recordaba ya cuál había sido la primera ofensa.
+Cian reconoció a Brian antes de distinguir los rostros de los otros dos hombres. Los tres aguardaban junto al camino, donde la llanura de Muirthemne descendía hacia unos pastos. No era un encuentro casual. Cian era hijo de Cáinte; Brian, Iuchar e Iucharba eran los hijos de Tuireann. Sus familias mantenían una enemistad tan antigua que nadie recordaba ya cuál había sido la primera ofensa.
 
 Cian viajaba solo. A poca distancia, una piara removía la tierra bajo los avellanos. Miró una vez hacia los tres hermanos, buscó entre sus ropas la vara de encantamiento y la apoyó contra su pecho. Un instante después, un cerdo más se revolcaba en el barro.
 
@@ -16,7 +16,7 @@ Brian había visto el movimiento de su mano.
 
 —Ahí está —dijo, señalando a los animales.
 
-Iuchar no distinguía uno de otro. Brian tocó entonces a sus dos hermanos con la vara y los transformó en perros veloces. La piara se dispersó entre gruñidos y ramas rotas. Los perros persiguieron a uno de los cerdos hasta separarlo del resto; Brian lo recibió con la punta de su lanza.
+Iuchar no distinguía uno de otro. Brian sacó su propia vara de encantamiento, tocó a sus dos hermanos y los transformó en perros veloces. La piara se dispersó entre gruñidos y ramas rotas. Los perros persiguieron a uno de los cerdos hasta separarlo del resto; Brian lo recibió con la punta de su lanza.
 
 Del animal herido salió una voz humana.
 
@@ -106,7 +106,7 @@ Se vistieron con ropas prestadas y pidieron audiencia. El rey, entretenido por a
 
 —No habéis venido a cantar —dijo.
 
-—Hemos venido a solicitar lo que describes como imposible de entregar —respondió Brian.
+—Hemos venido a pedir la piel de la que hablan mis versos —respondió Brian.
 
 La negativa fue inmediata. Brian había previsto una discusión; no esperaba que los guardias los rodearan antes de que pudiera dar un paso. Desenvainó. Las copas cayeron al suelo y la sala se llenó de gritos.
 
