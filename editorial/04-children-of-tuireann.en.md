@@ -1,10 +1,10 @@
 # Chapter 04 — The Children of Tuireann
 
-**Status:** English literary narrative approved by David on 13 November 2026. Final illustrations and visual review remain pending.
+**Status:** English literary narrative and three illustrations approved by David on 13 November 2026. Integrated into GitHub; verification of the live page appearance remains pending.
 **Collection:** Of Kings, Curses and Mist
 **Edition:** English, 13 November 2026
 **Narration:** Literary third person; dialogue and characterisation creatively reconstructed.
-**Art:** Temporary Celtic ornaments; final illustrations still to be selected and approved.
+**Art:** Three approved original vertical 4:5 illustrations: `assets/tuireann-departure-4x5.webp` (departure), `assets/tuireann-golden-apples-4x5.webp` (golden apples) and `assets/tuireann-three-cries-4x5.webp` (hilltop, revised Iucharba design). Celtic ornaments remain as interstitial decoration.
 
 ## 1. A Pig Among the Hazel Trees
 
