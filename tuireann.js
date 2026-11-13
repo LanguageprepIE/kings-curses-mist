@@ -35,7 +35,7 @@ es:{tuatha:['Tuatha Dé Danann','Pueblo sobrenatural de las leyendas irlandesas 
 };
 function markedParagraph(raw,paragraphIndex){
  const hits=[];
- const isWord=c=>c!==undefined&&/[\\p{L}\\p{N}]/u.test(c);
+ const isWord=c=>c!==undefined&&/[\p{L}\p{N}]/u.test(c);
  const locate=(text,form)=>{
   const source=text.toLocaleLowerCase(),needle=form.toLocaleLowerCase();
   let from=0;
