@@ -13,7 +13,7 @@
 | 01 | `children-of-lir` | *The Children of Lir* | *Los hijos de Lir* | Ciclo mitológico | Completado en ambas colecciones |
 | 02 | `salmon-of-knowledge` | *The Salmon of Knowledge* | *El salmón del conocimiento* | Ciclo feniano (juventud de Fionn) | Completado en ambas colecciones |
 | 03 | `dagdas-harp` | *The Dagda's Harp* | *El arpa del Dagda* | Ciclo mitológico | Completado en ambas colecciones; aprobación literaria del pergamino expresada |
-| 04 | `children-of-tuireann` | *The Children of Tuireann* | *Los hijos de Tuireann* | Ciclo mitológico | Siguiente capítulo |
+| 04 | `children-of-tuireann` | *The Children of Tuireann* | *Los hijos de Tuireann* | Ciclo mitológico | Narración literaria EN/ES validada el 13-11-2026 en [LIBRO]; ilustraciones definitivas y revisión visual pendientes. [PERGAMINOS] aún no adaptado. |
 | 05 | `dream-of-aengus` | *The Dream of Aengus* | *El sueño de Aengus* | Ciclo mitológico | Pendiente |
 | 06 | `wooing-of-etain` | *The Wooing of Étaín* | *La historia de Étaín* | Ciclo mitológico | Pendiente; seleccionar episodios |
 | 07 | `lugh-and-balor` | *Lugh and Balor* | *Lugh y Balor* | Ciclo mitológico | Pendiente; evitar duplicar batalla del capítulo III |
