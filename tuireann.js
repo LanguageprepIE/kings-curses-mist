@@ -34,22 +34,35 @@ en:{tuatha:['Tuatha Dé Danann','A supernatural people of Irish tradition, among
 es:{tuatha:['Tuatha Dé Danann','Pueblo sobrenatural de las leyendas irlandesas al que pertenecen Lugh y los hijos de Tuireann.'],lugh:['Lugh','Campeón de muchas habilidades, cuyo padre Cian muere a manos de los hermanos. Exige una compensación.'],cian:['Cian','Padre de Lugh. Intenta escapar de los tres hermanos transformándose en cerdo.'],tuireann:['Tuireann','Padre de Brian, Iuchar e Iucharba, que teme las consecuencias de la promesa de sus hijos.'],brian:['Brian','El mayor de los tres hermanos, decidido e ingenioso, y principal responsable del viaje.'],iuchar:['Iuchar','Uno de los tres hijos de Tuireann; hermano de Brian e Iucharba.'],iucharba:['Iucharba','El menor de los tres hijos de Tuireann, que comparte la peligrosa búsqueda.'],easal:['Easal','Rey de las Columnas de Oro que prefiere negociar cuando los hermanos reclaman sus siete cerdos.'],eraic:['Éraic','Compensación exigida por una muerte en la tradición irlandesa.'],muirthemne:['Muirthemne','Llanura relacionada con el primer encuentro entre Cian y los hijos de Tuireann.'],miodhchaoin:['Miodhchaoin','Guardián de la colina donde los hermanos deben dar tres gritos.']}
 };
 function markedParagraph(raw,paragraphIndex){
- const found=[];
+ const hits=[];
+ const isWord=c=>c!==undefined&&/[\\p{L}\\p{N}]/u.test(c);
+ const locate=(text,form)=>{
+  const source=text.toLocaleLowerCase(),needle=form.toLocaleLowerCase();
+  let from=0;
+  while(from<source.length){
+   const at=source.indexOf(needle,from);
+   if(at<0)return -1;
+   const before=at?text[at-1]:undefined,after=text[at+form.length];
+   if(!isWord(before)&&!isWord(after))return at;
+   from=at+1;
+  }
+  return -1;
+ };
  for(const [id,forms] of mythTerms){
-  const form=forms.find(x=>raw.toLocaleLowerCase().includes(x.toLocaleLowerCase()));
-  if(!form)continue;
+  const occurrences=forms.map(form=>({at:locate(raw,form),form})).filter(x=>x.at>=0).sort((a,b)=>a.at-b.at||b.form.length-a.form.length);
+  if(!occurrences.length)continue;
   let earlier=false;
   outer:for(let i=0;i<=page;i++){
    const limit=i===page?paragraphIndex:pages[lang][i].paras.length;
    for(let j=0;j<limit;j++){
-    if(forms.some(x=>pages[lang][i].paras[j].toLocaleLowerCase().includes(x.toLocaleLowerCase()))){earlier=true;break outer}
+    if(forms.some(form=>locate(pages[lang][i].paras[j],form)>=0)){earlier=true;break outer}
    }
   }
-  if(!earlier)found.push({at:raw.toLocaleLowerCase().indexOf(form.toLocaleLowerCase()),len:form.length,id});
+  if(!earlier)hits.push({at:occurrences[0].at,len:occurrences[0].form.length,id});
  }
- found.sort((a,b)=>a.at-b.at);
+ hits.sort((a,b)=>a.at-b.at||b.len-a.len);
  let cursor=0,result='';
- for(const m of found){
+ for(const m of hits){
   if(m.at<cursor)continue;
   result+=safe(raw.slice(cursor,m.at));
   const label=raw.slice(m.at,m.at+m.len);
