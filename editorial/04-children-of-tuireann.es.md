@@ -1,10 +1,10 @@
 # Leyenda 04 — Los hijos de Tuireann
 
-**Estado:** Narración literaria española validada por David el 13 de noviembre de 2026. Ilustraciones definitivas y revisión visual pendientes.
+**Estado:** Narración literaria española e ilustraciones aprobadas por David el 13 de noviembre de 2026. Integradas en GitHub; revisión visual de la web publicada pendiente de verificación.
 **Colección:** De reyes, maldiciones y niebla
 **Edición:** Español de España, 13 de noviembre de 2026
 **Narración:** Tercera persona literaria; diálogos y caracterización recreados.
-**Imágenes:** Motivos ornamentales provisionales; ilustraciones definitivas por seleccionar y validar.
+**Imágenes:** Tres ilustraciones originales aprobadas, en formato vertical 4:5: `assets/tuireann-departure-4x5.webp` (partida), `assets/tuireann-golden-apples-4x5.webp` (manzanas) y `assets/tuireann-three-cries-4x5.webp` (colina, versión corregida de Iucharba). Los motivos ornamentales permanecen como decoración entre escenas.
 
 ## 1. Un cerdo entre los avellanos
 
